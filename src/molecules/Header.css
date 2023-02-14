@@ -1,0 +1,9 @@
+.contener{
+    display: flex;
+    justify-content: end;
+}
+
+.contener nav{
+display: flex;
+flex-direction: row;
+}

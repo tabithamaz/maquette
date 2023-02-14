@@ -1,24 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from "./molecules/Header"
+import "./molecules/Header.css"
+import Title from "./atomes/Title";
+import Text from './atomes/Text';
+import Text3 from './atomes/Text3';
+import About from './molecules/About';
+import Button from './atomes/Button';
+
+
+
 
 function App() {
+  const buttonText= "check"
+  const data ={
+    paragraph1:'thrgntyhtyhtyhtyhty',
+    paragraph2:"gghj"
+
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header /> 
+      <Title title={"hi, my name is"} />
+      <Text title1={"Brittany chiang."} />
+      <Text3 paragraph={"I'am a sofware engineer specializing in building(and occasionally)"}/>
+   
+     <About data={ data}/>
+    <Button text={buttonText} />
+
+    </>
   );
 }
 
